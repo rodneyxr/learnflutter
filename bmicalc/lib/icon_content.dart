@@ -1,3 +1,4 @@
+import 'package:bmicalc/constants.dart';
 import 'package:flutter/material.dart';
 
 class IconContent extends StatelessWidget {
@@ -21,10 +22,7 @@ class IconContent extends StatelessWidget {
         ),
         Text(
           title ?? '',
-          style: TextStyle(
-            fontSize: 25,
-            color: Colors.grey[500],
-          ),
+          style: kLabelTextStyle,
         ),
       ],
     );
