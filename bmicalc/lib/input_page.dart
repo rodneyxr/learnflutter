@@ -1,3 +1,4 @@
+import 'package:bmicalc/bmi.dart';
 import 'package:bmicalc/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +30,7 @@ class _InputPageState extends State<InputPage> {
         title: const Text('BMI CALCULATOR'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
             child: Row(
@@ -155,13 +157,19 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          Container(
+          MaterialButton(
+            onPressed: () {
+              final BMI bmi = BMI(height: userHeight, weight: userWeight);
+              Navigator.pushNamed(context, '/result', arguments: bmi);
+            },
             color: kBottomButtonColor,
-            margin: const EdgeInsets.only(top: 15.0),
-            width: double.infinity,
             height: kBottomButtonHeight,
-            child: const Center(
-              child: Text('CALCULATE YOUR BMI'),
+            child: const Text(
+              'CALCULATE YOUR BMI',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ],
