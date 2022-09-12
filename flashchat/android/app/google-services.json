@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "21768581041",
+    "project_id": "flash-chat-2414c",
+    "storage_bucket": "flash-chat-2414c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21768581041:android:2bc47c49bfa5cfa496d790",
+        "android_client_info": {
+          "package_name": "com.rodneyxr.flashchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21768581041-3dspev1pd8acq8vncbbhtg8an584euen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4zNTTsg7scQFXO8aPnrO9ulFqdGhduqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21768581041-3dspev1pd8acq8vncbbhtg8an584euen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

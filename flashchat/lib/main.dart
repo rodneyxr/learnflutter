@@ -12,9 +12,10 @@ class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(useMaterial3: true).copyWith(
+      theme: ThemeData.dark(useMaterial3: false).copyWith(
         textTheme: const TextTheme(
           bodyText1: TextStyle(color: Colors.black54),
+          bodyText2: TextStyle(color: Colors.black),
         ),
       ),
       routes: {
